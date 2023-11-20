@@ -2,6 +2,10 @@
 
 <ul>
   <li *ngFor="let res of reservations">
-    {{res.guestName}}
+    Guest Name: {{res.guestName}} <br>
+    Guest Email: {{res.guestEmail}} <br>
+    Checkin Date: {{res.checkInDate}} <br>
+    Checkout Date: {{res.checkOutDate}} <br>
+    Room Number: {{res.roomNumber}} <br>
   </li>
 </ul>
