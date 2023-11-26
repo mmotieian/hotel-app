@@ -17,8 +17,7 @@ export class ReservationService {
   // Get all reservations
   getReservations(): Reservation[] {
     let localStorageItem = JSON.parse(localStorage.getItem('reservations')!);
-    console.log(localStorageItem);
-    return localStorageItem == null ? [] : localStorageItem.reservations;
+    return localStorageItem == null ? [] : localStorageItem;
   }
 
   // Get a reservation by id

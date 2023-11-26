@@ -11,11 +11,12 @@ export class ReservationListComponent implements OnInit {
 
   reservations: Reservation[] = [];
 
-  constructor(private reservationService: ReservationService) {}
+  constructor(private reservationService: ReservationService) {
+  }
 
   ngOnInit(): void {
-    console.log("ReservationListComponent::ngOnInit called");
     this.reservations = this.reservationService.getReservations();
+
   }
 
 }
